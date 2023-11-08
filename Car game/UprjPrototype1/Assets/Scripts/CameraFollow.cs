@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Jobs;
 
-public class PlayerController : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
-    public float speed = 1.0f;
+    private Vector3 offset = new Vector3(0, 5, -10);
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +13,8 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        //move vehicle forward
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        transform.position = player.transform.position + offset;
     }
 }
