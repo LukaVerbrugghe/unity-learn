@@ -16,8 +16,10 @@ public class CameraFollow : MonoBehaviour
     }
 
     void Update() {
+        //does the camera needs to move?
         if(Input.GetKeyDown("f"))
         {
+         //swithch camera offset
             if (offset == offsetBehind) {
                 offset = offsetUp;
             }
@@ -30,8 +32,6 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
-        
-
         //placing camera
         transform.position = player.transform.position + offset;
     }
