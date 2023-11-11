@@ -6,7 +6,7 @@ using UnityEngine.Jobs;
 public class PlayerController : MonoBehaviour
 {
     private float speed = 20f;
-    private float rotationSpeed = 40f;
+    private float rotationSpeed = 50f;
     private float horizontalInput;
     private float verticalInput;
 
