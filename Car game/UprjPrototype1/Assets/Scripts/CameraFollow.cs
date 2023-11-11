@@ -13,7 +13,6 @@ public class CameraFollow : MonoBehaviour
 
     private void Start() {
         offset = offsetBehind;
-
     }
 
     void Update() {
@@ -35,10 +34,5 @@ public class CameraFollow : MonoBehaviour
     {
         //placing camera
         transform.position = player.transform.position + offset;
-        if (offset == offsetDriverSeat) {
-            transform.rotation = player.transform.rotation;
-        } else {
-            transform.Rotate(0,0,0); 
-        }
     }
 }
