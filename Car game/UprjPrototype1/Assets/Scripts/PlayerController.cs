@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Jobs;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,5 +24,10 @@ public class PlayerController : MonoBehaviour
 
         //rotate vehicle
         transform.Rotate(Vector3.up, Time.deltaTime * rotationSpeed * horizontalInput);
+
+        //reset game
+        if (Input.GetKeyDown("r")) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
