@@ -17,7 +17,7 @@ public class SecondCameraControler : MonoBehaviour
 
     void Update() {
         //does the camera needs to move?
-        if (Input.GetKeyDown("f")) {
+        if (Input.GetKeyDown("l")) {
             //swithch camera offset
             if (offset == offsetBehind) {
                 offset = offsetUp;
