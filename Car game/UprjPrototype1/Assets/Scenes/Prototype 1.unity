@@ -13381,6 +13381,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!33 &936832984 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 3383130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
+  m_PrefabInstance: {fileID: 1905276463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &937645016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14535,6 +14540,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!33 &997219927 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 3340120, guid: 68840c673a0b18e41a044ed077548d55, type: 3}
+  m_PrefabInstance: {fileID: 18950713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &997633288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16963,6 +16973,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 997219920}
   player2: {fileID: 936832973}
+  filterPlayer1: {fileID: 997219927}
+  filterPlayer2: {fileID: 936832984}
+  vehicle1: {fileID: 4300000, guid: 93b9de2c4710d6b4e9ac38987a064d42, type: 3}
+  vehicle2: {fileID: 4300000, guid: 7799a29fdee308341b16b65d8a002357, type: 3}
+  vehicle3: {fileID: 4300000, guid: 6df34ee591500634282ce8431bcb6976, type: 3}
+  vehicle4: {fileID: 4300000, guid: a7dca03bf1b6f9b46b6916fa5450f775, type: 3}
+  vehicle5: {fileID: 4300000, guid: 576da546347c040428bb0204a37e73d3, type: 3}
 --- !u!4 &1160625178
 Transform:
   m_ObjectHideFlags: 0
