@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SecondPlayerController : MonoBehaviour
 {
-    private float speed = 20f;
-    private float rotationSpeed = 50f;
+    public float speed = 20f;
+    public float rotationSpeed = 50f;
     private float horizontalInput;
     private float verticalInput;
 
