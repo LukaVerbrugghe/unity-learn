@@ -6,11 +6,16 @@ using UnityEngine.Jobs;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed = 20f;
+    public float speed;
     public float rotationSpeed = 50f;
     private float horizontalInput;
     private float verticalInput;
+    public float mass;
+    public Rigidbody rb;
 
+    private void Start() {
+        rb = GetComponent<Rigidbody>();
+    }
 
     // Update is called once per frame
     void Update()

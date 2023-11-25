@@ -13356,6 +13356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rotationSpeed: 50
+  mass: 0
+  rb: {fileID: 0}
 --- !u!54 &936832983
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14517,6 +14519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rotationSpeed: 50
+  mass: 0
+  rb: {fileID: 0}
 --- !u!54 &997219926
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16991,6 +16995,11 @@ MonoBehaviour:
   blueCarSpeed: 40
   redCarSpeed: 50
   vanSpeed: 40
+  tankMass: 180
+  busMass: 145
+  blueCarMass: 100
+  redCarMass: 80
+  vanMass: 120
 --- !u!4 &1160625178
 Transform:
   m_ObjectHideFlags: 0
