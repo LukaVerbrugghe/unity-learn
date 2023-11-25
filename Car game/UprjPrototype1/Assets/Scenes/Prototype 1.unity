@@ -16981,25 +16981,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _PlayerController: {fileID: 997219921}
   _SecondPlayerController: {fileID: 936832978}
-  player1: {fileID: 997219920}
-  player2: {fileID: 936832973}
   filterPlayer1: {fileID: 997219927}
   filterPlayer2: {fileID: 936832984}
-  vehicle1: {fileID: 4300000, guid: 93b9de2c4710d6b4e9ac38987a064d42, type: 3}
-  vehicle2: {fileID: 4300000, guid: 7799a29fdee308341b16b65d8a002357, type: 3}
-  vehicle3: {fileID: 4300000, guid: 6df34ee591500634282ce8431bcb6976, type: 3}
-  vehicle4: {fileID: 4300000, guid: a7dca03bf1b6f9b46b6916fa5450f775, type: 3}
-  vehicle5: {fileID: 4300000, guid: 576da546347c040428bb0204a37e73d3, type: 3}
-  tankSpeed: 15
-  busSpeed: 28
-  blueCarSpeed: 40
-  redCarSpeed: 50
-  vanSpeed: 40
-  tankMass: 180
-  busMass: 145
-  blueCarMass: 100
-  redCarMass: 80
-  vanMass: 120
+  vehicleSpeed:
+  - 10
+  - 50
+  - 65
+  - 55
+  - 45
+  vehicleMass:
+  - 200
+  - 150
+  - 40
+  - 50
+  - 55
+  currentCarIndexPlayer1: 0
 --- !u!4 &1160625178
 Transform:
   m_ObjectHideFlags: 0
