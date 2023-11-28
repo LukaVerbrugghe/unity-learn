@@ -6,13 +6,15 @@ public class SpawnManager : MonoBehaviour
 {
     //variables
     public GameObject[] animalPrefabs;
-    public int animalIndex;
+    private int spawnRangeX = 10;
+    private int spawnRangeZ = 20;
 
     private void Update() {
         //dier spawnen
         if (Input.GetKeyDown(KeyCode.S)) { 
-            animalIndex = Random.Range(0, animalPrefabs.Length);
-            Instantiate(animalPrefabs[animalIndex], new Vector3(0, 0, 20), animalPrefabs[animalIndex].transform.rotation);
+            int animalIndex = Random.Range(0, animalPrefabs.Length);
+            Vector3 spawnPos = new Vector3(Random.RandomRange(-spawnRangeX, spawnRangeX), 0, spawnRangeZ);
+            Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
         }
     }
 }
