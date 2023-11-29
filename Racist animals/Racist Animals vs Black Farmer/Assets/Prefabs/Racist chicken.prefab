@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7418130175341160078}
   - component: {fileID: 537982824073048661}
   - component: {fileID: 2853211028494878134}
+  - component: {fileID: 9919180352058286}
+  - component: {fileID: 4067711770826542916}
   m_Layer: 0
   m_Name: Racist chicken
   m_TagString: Untagged
@@ -86,6 +88,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8851f8bdc313f9b4790c591d97b3101d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &9919180352058286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337086132789012073}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.170181, y: 16.978107, z: 20.737604}
+  m_Center: {x: 0.04779564, y: 7.989053, z: 1.2174711}
+--- !u!114 &4067711770826542916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337086132789012073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ce2f3611681b840bcffc425621bcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &459406459168308402

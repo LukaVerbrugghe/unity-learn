@@ -692,6 +692,8 @@ GameObject:
   - component: {fileID: 2891157372512112428}
   - component: {fileID: 920509524586699448}
   - component: {fileID: 8441545704723538214}
+  - component: {fileID: 10614993983404795}
+  - component: {fileID: 1434972710789871400}
   m_Layer: 0
   m_Name: Racist Moose
   m_TagString: Untagged
@@ -768,6 +770,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8851f8bdc313f9b4790c591d97b3101d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &10614993983404795
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6802290554613761421}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.19258378, y: 0.49079758, z: 0.45164824}
+  m_Center: {x: -0.0021592, y: 0.2286954, z: 0.065485284}
+--- !u!114 &1434972710789871400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6802290554613761421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ce2f3611681b840bcffc425621bcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7761402788391148755
