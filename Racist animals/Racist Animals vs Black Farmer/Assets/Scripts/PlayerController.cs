@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private float speed = 25;
-    private int xBound = 10; //restrictions of player movement
+    private int xBound = 13; //restrictions of player movement
     private float zBound = 15;
     public GameObject prefab; //to instantiate the projectile
 
@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         if (transform.position.z > zBound) {
             transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
+        }
+        if(transform.position.z < 0) {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 0);
         }
         transform.Translate(Vector3.forward * Time.deltaTime * verticalInput * speed);
 
