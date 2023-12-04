@@ -9,13 +9,25 @@ public class DestroyOutOfBounds : MonoBehaviour
     private float negativeBoundZ = -6;
     private float BoundX = 25;
 
+    DetectCollisions DetectCollisions = new DetectCollisions();
+
+    public showGameOver showGameOver;
+
+    private int AantalLevens = 0;
+
+    private void GameOver() {
+        showGameOver.Setup(DetectCollisions.score);
+    }
     private void Update() {
         //check if the object should be destroyed
         if (transform.position.z > positiveBoundZ || transform.position.x > BoundX || transform.position.x < -BoundX) {
             Destroy(gameObject);
         } else if (transform.position.z < negativeBoundZ) { 
             Destroy(gameObject);
-            Debug.Log("Game over");
+            AantalLevens--;
+            if (AantalLevens < 0) {
+                GameOver();
+            }
         }
     }
 }
