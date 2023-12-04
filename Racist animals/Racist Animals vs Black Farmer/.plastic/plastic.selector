@@ -1,0 +1,4 @@
+repository "Racist Animals vs Black Farmer@Professor_Verbrugghe@cloud"
+  path "/"
+    br "/main"
+    co "/main"
