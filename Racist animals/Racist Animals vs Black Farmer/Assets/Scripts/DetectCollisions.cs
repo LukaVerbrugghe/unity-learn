@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    public int score = 0; 
+    public int score; 
     private void OnTriggerEnter(Collider other) {
         Destroy(other.gameObject);
         Destroy(gameObject);

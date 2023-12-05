@@ -11,12 +11,10 @@ public class DestroyOutOfBounds : MonoBehaviour
 
     DetectCollisions DetectCollisions = new DetectCollisions();
 
-    public showGameOver showGameOver;
-
     private int AantalLevens = 0;
 
     private void GameOver() {
-        showGameOver.Setup(DetectCollisions.score);
+        Debug.Log("Game over");
     }
     private void Update() {
         //check if the object should be destroyed
