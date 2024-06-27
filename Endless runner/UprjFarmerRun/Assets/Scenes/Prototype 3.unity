@@ -347,7 +347,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!1 &534669902
 GameObject:
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e85b0c9466ac2534bac51039d29228d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: -10
 --- !u!1 &1396332708
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +569,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Spawn: {fileID: 7692712509543852814, guid: da8ba4240d8fc1146898e5cb10189186, type: 3}
+  startDelay: 2
+  repeatRate: 2
 --- !u!4 &1396332710
 Transform:
   m_ObjectHideFlags: 0
