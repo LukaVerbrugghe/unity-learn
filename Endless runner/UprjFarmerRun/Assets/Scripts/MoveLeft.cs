@@ -6,6 +6,7 @@ public class MoveLeft : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     private PlayerController playerControllerScript;
+    private float downBound = -5;
 
     private void Start()
     {
@@ -18,6 +19,11 @@ public class MoveLeft : MonoBehaviour
         if (!playerControllerScript.gameOver)
         {
             transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);  
+        }
+
+        if (transform.position.y <= downBound)
+        {
+            Destroy(gameObject);
         }
     }
 }
